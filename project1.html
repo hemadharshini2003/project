@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+            background-color: rgb(12, 4, 4);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        
+        }
+nav{
+    background-color: rgb(10, 2, 2);
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+}
+nav .logo{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo .title a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+font-weight: bold;
+}
+.logo ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+.logo ul li{
+    margin-left: 25px;
+}
+.logo ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.logo ul li a:hover {
+    background-color: #f1ecec;
+            color: black;
+}  
+.row {  
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 10px;
+  padding: 100px;
+  margin-bottom: 20px;
+  background-image: url('images.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.side {
+  -ms-flex: 30%; 
+  flex: 30%;
+  background-color:transparent;
+  padding: 20px;
+}
+.main {   
+  -ms-flex: 100%; 
+  flex: 70%;
+  background-color:transparent;
+  padding: 20px;
+  height: 15pc;
+}
+.btn button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.btn :hover{
+    background-color: rgb(9, 147, 228);
+    color: aqua;
+
+}
+
+footer{
+    margin-top:20px;
+    padding: 10px;
+}
+footer p{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;   
+}
+@media screen and (max-width: 70%) {
+  .row {   
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 30%) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+        <div class="title">
+            <header>
+                <h1>MASTER MIND</h1>
+            </header>
+        </div>
+            <ul>
+                <li><a href ="#">HOME</a></li>
+                <li><a href ="#">ABOUT</a></li>
+                <li><a href ="#">GALLERY</a></li>
+                <li><a href ="#">CONTACT US</a></li>
+            </ul>
+        </div>
+
+<div class="row">
+  <div class="side">
+    <h2>ABOUT US &#129303;</h2>
+    <p>Believe in yourself: You can do anything you set your mind to. Don't give up: No matter how hard things get, keep going. Set goals: Having something to strive for will keep you motivated. Take action: Don't just sit around and dream, make things happen</p>
+  </div>
+  <div class="main">
+    <h2>MASTERMIND SOLUTIONS &#127891;</h2>
+    <p>Be concise: Keep it short and simple, with a maximum of five words.Be unique: Avoid cliches and overused phrases</p>
+    <div class="btn">
+        <button>WATCH VIDEO </button>
+        <button>SUBSCRIBE</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+    <p>www.mastermindtechno.in </p>
+</footer>
+</body>
+</html>
